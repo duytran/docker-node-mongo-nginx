@@ -1,5 +1,19 @@
 # Node, Mongo, Nginx Stack
 
+## Reference
+
+[How to setup user authentication in MongoDB 3.0](https://medium.com/@matteocontrini/how-to-setup-auth-in-mongodb-3-0-properly-86b60aeef7e8#.vnmysizsb)
+
+[MongoDB Authentication example](https://www.mkyong.com/mongodb/mongodb-authentication-example/)
+
+[Docker now supports adding host mappings](http://jasani.org/2014/11/19/docker-now-supports-adding-host-mappings/)
+
+[Nginx and Node.js with Docker](http://schempy.com/2015/08/25/docker_nginx_nodejs/)
+
+[A sample Docker workflow with Nginx, Node.js and Redis](http://anandmanisankar.com/posts/docker-container-nginx-node-redis-example/)
+
+[Setting up a Replicated MongoDB using Authentication in Docker on DigitalOcean](http://variable.dk/blog/633-a-replicated-mongodb-using-authentication-in-docker-on-digitalocean)
+
 ## Mongo
 #### Start up mongo initially
 ``` bash
@@ -255,18 +269,4 @@ You should see a running container with the name web.
 
 Point your browser to `http://localhost:8080`. CLick on the link labled HIT and that will take you to the nodejs server! Notice the link does not contain the port 3000. This is because Nginx is configured to use the /hit url as a proxy to the nodejs server.
 
-Full source code for this example [docker-node-mongo-nginx]()
-
-### Reference
-
-[How to setup user authentication in MongoDB 3.0](https://medium.com/@matteocontrini/how-to-setup-auth-in-mongodb-3-0-properly-86b60aeef7e8#.vnmysizsb)
-
-[MongoDB Authentication example](https://www.mkyong.com/mongodb/mongodb-authentication-example/)
-
-[Docker now supports adding host mappings](http://jasani.org/2014/11/19/docker-now-supports-adding-host-mappings/)
-
-[Nginx and Node.js with Docker](http://schempy.com/2015/08/25/docker_nginx_nodejs/)
-
-[A sample Docker workflow with Nginx, Node.js and Redis](http://anandmanisankar.com/posts/docker-container-nginx-node-redis-example/)
-
-[Setting up a Replicated MongoDB using Authentication in Docker on DigitalOcean](http://variable.dk/blog/633-a-replicated-mongodb-using-authentication-in-docker-on-digitalocean)
+Full source code for this example [docker-node-mongo-nginx](https://github.com/duytran/docker-node-mongo-nginx)
